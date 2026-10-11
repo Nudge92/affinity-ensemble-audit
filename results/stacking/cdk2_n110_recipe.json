@@ -1,0 +1,24 @@
+{
+  "n110_recipe": {
+    "models": [
+      "GIGN",
+      "NMDN",
+      "DeepDTA"
+    ],
+    "weights": [
+      0.5,
+      0.45,
+      0.05
+    ],
+    "rho_n110": 0.5207,
+    "phase2_rho_on_n110": 0.3237,
+    "improvement_vs_phase2": 0.197,
+    "improvement_vs_solo": 0.094,
+    "best_solo_model": "GIGN",
+    "best_solo_rho": 0.4267,
+    "excluded_models": [
+      "PIGNet2",
+      "MGraphDTA"
+    ]
+  }
+}

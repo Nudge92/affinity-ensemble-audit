@@ -1,0 +1,14 @@
+{
+ "n_mols": 451,
+ "n_scaffolds": 265,
+ "n_shared_scaffolds": 62,
+ "n_prop_ok": 369,
+ "n_mcs_evaluated": 98,
+ "n_pairs": 40,
+ "params": {
+  "MAX_UNIQUE": 5,
+  "MIN_DPKD": 1.0,
+  "MAX_ROTB": 8,
+  "MAX_MW": 500.0
+ }
+}

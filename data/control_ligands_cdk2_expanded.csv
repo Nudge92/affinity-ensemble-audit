@@ -1,0 +1,111 @@
+ID,Drug_Name,SMILES,Type,pKd,Notes
+CDK2_pos_01,Staurosporine,C[C@@]12[C@@H]([C@@H](C[C@@H](O1)N3C4=CC=CC=C4C5=C6C(=C7C8=CC=CC=C8N2C7=C53)CNC6=O)NC)OC,positive,8.15,Pan-kinase inhibitor; CDK2 Ki~7nM; 1AQ1 co-crystal
+CDK2_pos_02,AT7519,CC[C@H](CO)N1C2=NC(=NC=C2C(=O)N1C3=CC(=CC=C3)NCC4=CC=C([N+](=O)[O-])C=C4)NCC5=CC=CC(=C5)Cl,positive,7.33,CDK1/2/4/5/9; CDK2 IC50=47nM
+CDK2_pos_03,Roscovitine,CC(C1=NC(=NC=N1)N(C)C2CCCCC2)NCC3=CC=CC=C3,positive,6.15,CDK1/2/5/7; CDK2 IC50~0.7uM
+CDK2_pos_04,Alvocidib,O=C1C=C(OC2=CC(=CC(=C21)O)O)[C@@H]1CC[C@@H](O)CC1,positive,7.0,Flavopiridol; CDK1/2/4; CDK2 IC50~0.1uM
+CDK2_pos_05,Dinaciclib,CC[C@@H](CO)N1C2=CC=C(C=C2C(=O)N1C3=NC(=NC=C3NCC4=CC([O-])=CC=C4)N)F,positive,9.0,CDK1/2/5/9; CDK2 IC50~1nM
+CDK2_pos_06,AZD5438,CC(=O)C1=C(C=C(C=C1)F)NC2=NC=C(C(=N2)NC3=CC(=CC=C3)S(=O)(=O)NC(C)C)Br,positive,7.4,CDK1/2/9; CDK2 IC50~16nM
+CDK2_pos_07,SNS-032,CC(C1=NN(C(=S)N1)CC2=CC=CC=C2)NC(=O)C3=CC4=CC=CC=C4S3,positive,7.42,BMS-387032; CDK2 IC50=38nM; CDK9 IC50=4nM
+CDK2_pos_08,Kenpaullone,O=C1NC2=CC=CC=C2/C1=C\1C2=C(Br)C=CC=C2NC1=O,positive,6.15,CDK1/2/5; CDK2 IC50=0.7uM
+CDK2_pos_09,Olomoucine,C1=CC=C(C=C1)NCC(C)NC2=NC=NC3=C2N=CN3,positive,5.15,CDK1/2/5; CDK2 IC50=7uM
+CDK2_pos_10,NU6102,NS(=O)(=O)C1=CC=C(NC2=NC3=C(N=CN3)C(=N2)OCC3CCCCC3)C=C1,positive,8.3,CDK2 selective; IC50=5nM
+CDK2_pos_11,Purvalanol_A,CC(C)C(NC1=NC(=C2N=CN(C2=N1)C(C)C)NCC3=CC(=CC=C3)Cl)CO,positive,7.3,CDK2 IC50=50nM; selective
+CDK2_pos_12,SU9516,O=C1NC(/C=C\2C3=CC=CC=C3NC2=O)=C(O)C1=O,positive,5.6,CDK2 IC50=2.5uM; ATP-competitive
+CDK2_pos_13,Milciclib,CC1=C(C(=O)N(N1)C2=NC3=C(C=C2)N=CC=C3)NCC4=CC=C(C=C4)N5CCOCC5,positive,7.35,CDK2 IC50=45nM; phase II
+CDK2_pos_14,Riviciclib,COC1=CC2=C(C=C1OC)C(=CC(=O)N2)C1=CC(=CC=C1)OC,positive,6.3,P276-00; CDK2; IC50~0.5uM
+CDK2_pos_15,BS-194,C1=CC2=C(C=C1F)N=C(N=C2NC3=CC(=CC=C3)S(=O)(=O)NC)NCC4=CC=CC=C4,positive,8.52,CDK2 IC50=3nM; pyrazolopyrimidine
+CDK2_pos_16,CHEMBL497477,O=C(NC1CCNCC1)c1n[nH]cc1NC(=O)c1c(F)cccc1Cl,positive,6.96,ChEMBL:CHEMBL497477; IC50 converted to pKd
+CDK2_pos_17,CHEMBL463579,O=C(Nc1ccc(F)cc1)c1n[nH]cc1NC(=O)C1CCCCC1,positive,7.05,ChEMBL:CHEMBL463579; IC50 converted to pKd
+CDK2_pos_18,CHEMBL365608,C=C(c1ccc2nc(N)c(C(=O)c3c(F)cccc3F)n2c1)c1c(F)cccc1F,positive,7.2,ChEMBL:CHEMBL365608; IC50 converted to pKd
+CDK2_pos_19,CHEMBL59110,O=C1Nc2ccc(F)cc2/C1=C/c1[nH]cc2c1CCOC2=O,positive,7.09,ChEMBL:CHEMBL59110; IC50 converted to pKd
+CDK2_pos_20,CHEMBL1642655,CC(C)(C)c1ccc(C(=O)Nc2cn3cc(-n4ccnc4)ccc3n2)cc1,positive,6.81,ChEMBL:CHEMBL1642655; IC50 converted to pKd
+CDK2_pos_21,CHEMBL5505838,CC(=O)Nc1ccc(CNc2nc(N3CCC[C@@H]3CO)nc3c(C(C)C)cnn23)cc1,positive,7.09,ChEMBL:CHEMBL5505838; IC50 converted to pKd
+CDK2_pos_22,CHEMBL225519,O=C1NCCc2[nH]c(-c3ccncc3)cc21,positive,6.62,ChEMBL:CHEMBL225519; IC50 converted to pKd
+CDK2_pos_23,CHEMBL584754,Cc1ccccc1Nc1ncc(C)c(-c2c[nH]c(C(=O)N[C@H](CO)c3ccccc3)c2)n1,positive,6.85,ChEMBL:CHEMBL584754; Ki converted to pKd
+CDK2_pos_24,CHEMBL112442,CCCC(=O)Nc1cc(C2CC2)[nH]n1,positive,6.65,ChEMBL:CHEMBL112442; IC50 converted to pKd
+CDK2_pos_25,CHEMBL5179286,CC(C)NC(=O)O[C@@H]1CC[C@H](c2cc(NC(=O)Cc3ccccc3S(C)(=O)=O)n[nH]2)C1,positive,7.0,ChEMBL:CHEMBL5179286; IC50 converted to pKd
+CDK2_pos_26,CHEMBL5557963,CCC(=O)Nc1ccc(CNc2nc(NC3CCOCC3)nc3c(C(C)C)cnn23)cc1,positive,6.5,ChEMBL:CHEMBL5557963; IC50 converted to pKd
+CDK2_pos_27,CHEMBL3655777,CCC(Nc1nc(NCc2cccnc2)c2ncn(C(C)C)c2n1)C(O)C(F)(F)F,positive,7.05,ChEMBL:CHEMBL3655777; IC50 converted to pKd
+CDK2_pos_28,CHEMBL83369,O=C1Nc2ccc(F)c3c(SCCO)cc(-c4ccc[nH]4)c1c23,positive,7.85,ChEMBL:CHEMBL83369; IC50 converted to pKd
+CDK2_pos_29,CHEMBL3655771,CC[C@H](Nc1nc(NCc2cc(C)nc(C)c2)c2ncn(C(C)C)c2n1)[C@@H](C)O,positive,7.3,ChEMBL:CHEMBL3655771; IC50 converted to pKd
+CDK2_pos_30,CHEMBL3644020,C[C@@H](O)[C@@H](C)Oc1nc(Nc2ccc(S(=O)(=O)c3ccccc3)cc2)ncc1C(F)(F)F,positive,7.44,ChEMBL:CHEMBL3644020; IC50 converted to pKd
+CDK2_pos_31,CHEMBL23327,CC(C)[C@H](CO)Nc1nc(Nc2cccc(Cl)c2)c2ncn(C(C)C)c2n1,positive,7.31,ChEMBL:CHEMBL23327; IC50 converted to pKd
+CDK2_pos_32,CHEMBL1081263,N[C@H](CNc1ncc(-c2ccc3cnccc3c2)s1)Cc1ccc(C(F)(F)F)cc1,positive,7.91,ChEMBL:CHEMBL1081263; IC50 converted to pKd
+CDK2_pos_33,CHEMBL5979966,Cc1nc2c(F)cc(-c3nc(Nc4ccc5c(n4)CCN(CCN4CCN(C)CC4)C5)ncc3F)cc2n1C(C)(C)C,positive,7.4,ChEMBL:CHEMBL5979966; IC50 converted to pKd
+CDK2_pos_34,CHEMBL300767,COc1ccc2c(c1)/C(=C/c1[nH]cc3c1CCOC3=O)C(=O)N2,positive,7.4,ChEMBL:CHEMBL300767; IC50 converted to pKd
+CDK2_pos_35,CHEMBL2426399,COc1ccc(NC(=S)NC(=O)c2cn(-c3ccccc3)nc2-c2ccccc2)cc1,positive,7.25,ChEMBL:CHEMBL2426399; IC50 converted to pKd
+CDK2_pos_36,CHEMBL3940661,CS(=N)(=O)c1ccc(Nc2ncc(Br)c(Nc3ccccc3)n2)cc1,positive,7.48,ChEMBL:CHEMBL3940661; IC50 converted to pKd
+CDK2_pos_37,CHEMBL3644021,C[C@@H](O)[C@@H](C)Oc1nc(Nc2ccc(S(=O)(=O)C(F)F)cc2)ncc1C(F)(F)F,positive,7.92,ChEMBL:CHEMBL3644021; IC50 converted to pKd
+CDK2_pos_38,CHEMBL1207227,O=C1C(c2c(O)[nH]c3ccc(S(=O)(=O)O)cc23)=Nc2ccccc21,positive,7.66,ChEMBL:CHEMBL1207227; IC50 converted to pKd
+CDK2_pos_39,CHEMBL3298310,CC[C@@H](NC(=O)N1CCc2cnc(N[C@@H](C)CO)nc2C1)c1ccc(Cl)c(Cl)c1,positive,7.92,ChEMBL:CHEMBL3298310; IC50 converted to pKd
+CDK2_pos_40,CHEMBL408210,CCOC(=O)c1cccc2c1/C(=C/Nc1ccc(S(N)(=O)=O)cc1)C(=O)N2,positive,8.05,ChEMBL:CHEMBL408210; IC50 converted to pKd
+CDK2_pos_41,CHEMBL5280928,CC(=O)c1c(C)c2cnc(NC3CCN(S(C)(=O)=O)CC3)nc2n(C2CCCC2)c1=O,positive,8.23,ChEMBL:CHEMBL5280928; Ki converted to pKd
+CDK2_pos_42,CHEMBL1171948,NC(=O)Cn1nc(C(N)=O)c2c1-c1nc(Nc3ccccc3)ncc1CC2,positive,8.0,ChEMBL:CHEMBL1171948; IC50 converted to pKd
+CDK2_pos_43,CHEMBL419634,COCCNS(=O)(=O)c1ccc(Nc2nccc(-c3cnc4ccc(C#N)cn34)n2)cc1,positive,8.52,ChEMBL:CHEMBL419634; IC50 converted to pKd
+CDK2_pos_44,CHEMBL453629,Cc1ncc(-c2ccnc(Nc3ccc(C(=O)NCCN(C)C)c(F)c3)n2)n1C(C)C,positive,8.52,ChEMBL:CHEMBL453629; IC50 converted to pKd
+CDK2_pos_45,CHEMBL415471,N#CCCc1cc(-c2ccc[nH]2)c2c3c(ccc(F)c13)NC2=O,positive,8.3,ChEMBL:CHEMBL415471; IC50 converted to pKd
+CDK2_pos_46,CHEMBL407709,NS(=O)(=O)c1ccc(N/N=C2\C(=O)Nc3ccc4ncsc4c32)cc1,positive,8.15,ChEMBL:CHEMBL407709; IC50 converted to pKd
+CDK2_pos_47,CHEMBL478828,COc1ccc(Nc2nccc(-c3cnc(C)n3C(C)C)n2)cc1,positive,8.1,ChEMBL:CHEMBL478828; IC50 converted to pKd
+CDK2_pos_48,CHEMBL495557,CC(C)(C)c1cnc(CSc2cnc(N[C@H]3CC[C@H](O)CC3)s2)o1,positive,8.15,ChEMBL:CHEMBL495557; IC50 converted to pKd
+CDK2_pos_49,CHEMBL2112297,O=C1Nc2ccc3ncsc3c2/C1=C/Nc1ccc(S(=O)(=O)N[n+]2ccc3ccccc3c2)cc1,positive,8.02,ChEMBL:CHEMBL2112297; IC50 converted to pKd
+CDK2_pos_50,CHEMBL1964259,O=C1Nc2ccc3ncsc3c2/C1=C/Nc1ccc(S(=O)(=O)NCCOCCO)cc1,positive,8.59,ChEMBL:CHEMBL1964259; IC50 converted to pKd
+CDK2_pos_51,CHEMBL255718,O=C(Cc1ccc(O)cc1)Nc1n[nH]c2ccc(N3CCCS3(=O)=O)cc12,positive,8.05,ChEMBL:CHEMBL255718; IC50 converted to pKd
+CDK2_pos_52,CHEMBL259838,O=C(Nc1n[nH]c2nc(-c3ccc(O)c(Cl)c3)ccc12)C1CC1,positive,8.7,ChEMBL:CHEMBL259838; IC50 converted to pKd
+CDK2_pos_53,CHEMBL409892,NS(=O)(=O)c1ccc(N/N=C2\C(=O)Nc3ccc4ncccc4c32)cc1,positive,8.8,ChEMBL:CHEMBL409892; IC50 converted to pKd
+CDK2_pos_54,CHEMBL411887,C/C(Nc1ccc(S(N)(=O)=O)cc1)=C1/C(=O)Nc2ccc(-c3cnco3)cc21,positive,8.7,ChEMBL:CHEMBL411887; IC50 converted to pKd
+CDK2_pos_55,CHEMBL509881,Cc1ncc(-c2nc(Nc3ccc(C(N)=O)cc3)ncc2F)n1C(C)C,positive,9.0,ChEMBL:CHEMBL509881; IC50 converted to pKd
+CDK2_pos_56,CHEMBL4088242,CC[C@@H](C)Oc1nc(Nc2ccc(S(N)(=O)=O)cc2)nc(N)c1C=O,positive,9.1,ChEMBL:CHEMBL4088242; IC50 converted to pKd
+CDK2_pos_57,CHEMBL454648,Cc1ncc(-c2nc(Nc3ccc(C(=O)N(C)C)c(F)c3)ncc2F)n1C(C)C,positive,8.7,ChEMBL:CHEMBL454648; IC50 converted to pKd
+CDK2_pos_58,CHEMBL455657,CN[C@H]1CCN(C(=O)c2ccc(Nc3ncc(F)c(-c4cnc(C)n4C(C)C)n3)cc2)C1,positive,8.7,ChEMBL:CHEMBL455657; IC50 converted to pKd
+CDK2_pos_59,CHEMBL559513,CN1CCN(c2cccc(Nc3ncc4c(n3)-c3c(c(C(N)=O)nn3C)CC4)c2)CC1,positive,9.0,ChEMBL:CHEMBL559513; IC50 converted to pKd
+CDK2_pos_60,CHEMBL271136,COc1cccc(OC)c1CNC(=O)c1ccc2c(c1)/C(=N/Nc1ccc(S(N)(=O)=O)cc1)C(=O)N2,positive,8.77,ChEMBL:CHEMBL271136; IC50 converted to pKd
+CDK2_pos_61,CHEMBL260416,O=C(Nc1n[nH]c2nc(-c3ccc(O)c(Br)c3)ccc12)C1CC1,positive,8.7,ChEMBL:CHEMBL260416; IC50 converted to pKd
+CDK2_pos_62,CHEMBL271953,NS(=O)(=O)c1ccc(N/N=C2\C(=O)Nc3ccc(C(=O)NCc4cccnc4)cc32)cc1,positive,8.68,ChEMBL:CHEMBL271953; IC50 converted to pKd
+CDK2_pos_63,CHEMBL2103840,CCc1cnn2c(NCc3ccc[n+]([O-])c3)cc(N3CCCC[C@H]3CCO)nc12,positive,9.0,ChEMBL:CHEMBL2103840; IC50 converted to pKd
+CDK2_pos_64,CHEMBL317703,NS(=O)(=O)c1ccc(Nc2cc(-c3ccc([N+](=O)[O-])cc3)[nH]n2)cc1,positive,9.48,ChEMBL:CHEMBL317703; IC50 converted to pKd
+CDK2_pos_65,CHEMBL526110,O=[N+]([O-])c1cccc(Nc2nccc(-c3cnn4ncccc34)n2)c1,positive,9.52,ChEMBL:CHEMBL526110; IC50 converted to pKd
+CDK2_pos_66,CHEMBL4446357,C[C@@]1(O)CCC[C@H]1n1c(=O)c(C(F)F)cc2cnc(NC3CCN(S(C)(=O)=O)CC3)nc21,positive,10.05,ChEMBL:CHEMBL4446357; Ki converted to pKd
+CDK2_pos_67,CHEMBL321517,Nc1ccc(-c2cc(Nc3ccc(S(N)(=O)=O)cc3)[nH]n2)cc1,positive,9.47,ChEMBL:CHEMBL321517; IC50 converted to pKd
+CDK2_pos_68,CHEMBL50894,O=C1Cc2c([nH]c3ccc([N+](=O)[O-])cc23)-c2ccccc2N1,positive,7.82,ChEMBL:CHEMBL50894; IC50 converted to pKd
+CDK2_pos_69,CHEMBL3642651,CC(C)c1cc(NCc2ccncc2)n2ncc(Br)c2n1,positive,7.38,ChEMBL:CHEMBL3642651; IC50 converted to pKd
+CDK2_pos_70,CHEMBL5287128,C[C@@H](O)[C@@H](C)Nc1nc(Nc2ccc([S@](=N)(=O)C3CC3)cc2)ncc1C(F)(F)F,positive,8.05,ChEMBL:CHEMBL5287128; IC50 converted to pKd
+CDK2_pos_71,CHEMBL523735,NC(=O)c1ccc(Nc2nccc(-c3cnn4ncccc34)n2)cc1,positive,7.8,ChEMBL:CHEMBL523735; IC50 converted to pKd
+CDK2_pos_72,CHEMBL5994315,Cc1nc2c(F)cc(-c3nc(Nc4ccc5c(n4)CCN(CC(=O)O)C5)ncc3F)cc2n1C(C)C,positive,8.13,ChEMBL:CHEMBL5994315; IC50 converted to pKd
+CDK2_pos_73,CHEMBL4077071,CN1CCN(Cc2ccc(NC(=O)c3n[nH]cc3Nc3ncnc4[nH]ccc34)cc2)CC1,positive,8.61,ChEMBL:CHEMBL4077071; IC50 converted to pKd
+CDK2_pos_74,CHEMBL495558,CC(C)(C)c1cnc(CSc2cnc(NC3CCCC(O)C3)s2)o1,positive,7.55,ChEMBL:CHEMBL495558; IC50 converted to pKd
+CDK2_pos_75,CHEMBL82767,NCCNc1cc(-c2ccc[nH]2)c2c3c(ccc(F)c13)NC2=O,positive,7.92,ChEMBL:CHEMBL82767; IC50 converted to pKd
+CDK2_neg_01,Aspirin,CC(=O)OC1=CC=CC=C1C(=O)O,negative,3.0,COX inhibitor; no kinase activity
+CDK2_neg_02,Ibuprofen,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,negative,3.0,COX inhibitor; no kinase activity
+CDK2_neg_03,Metformin,CN(C)C(=N)NC(=N)N,negative,3.0,AMPK activator; no kinase binding
+CDK2_neg_04,Celecoxib,CC1=CC=C(C=C1)C2=CC(=NN2C3=CC=C(C=C3)S(=O)(=O)N)C(F)(F)F,negative,3.0,COX-2 inhibitor; no CDK activity
+CDK2_neg_05,Salicylic_acid,OC(=O)C1=CC=CC=C1O,negative,3.0,Anti-inflammatory; no kinase activity
+CDK2_neg_06,Methotrexate,CN(CC1=CN=C2N=C(N)N=C(N)C2=N1)C1=CC=C(C(=O)N[C@@H](CCC(=O)O)C(=O)O)C=C1,negative,2.0,DHFR inhibitor; no CDK2 activity
+CDK2_neg_07,Omeprazole,COC1=CC2=C(C=C1OC)N=C(S(=O)CC1=NC=C(C)C(=C1)OC)N2,negative,2.0,Proton pump inhibitor
+CDK2_neg_08,Amlodipine,CCOC(=O)C1=C(COCCN)NC(C)=C(C(=O)OC)C1C1=CC=CC=C1Cl,negative,2.0,Ca channel blocker
+CDK2_neg_09,Tamoxifen,CCC(=C(C1=CC=CC=C1)C1=CC=CC=C1)C1=CC=C(OCCN(C)C)C=C1,negative,2.0,ER antagonist; no kinase activity
+CDK2_neg_10,Loratadine,CCOC(=O)N1CCC(=C2C3=CC=C(Cl)C=C3CCC3=CC=CN=C32)CC1,negative,2.0,H1 antihistamine
+CDK2_neg_11,CHEMBL100664,COc1ccccc1Nc1ccnc(Nc2ccc(OCC(O)CN(C)C)cc2)n1,negative,4.82,ChEMBL:CHEMBL100664; IC50 converted to pKd
+CDK2_neg_12,CHEMBL5190528,CC(C)(C)n1nc(-c2cccc(NC(=O)/C(C#N)=C/c3cccc(Br)c3)c2)c2c(=O)[nH]cnc21,negative,4.83,ChEMBL:CHEMBL5190528; Ki converted to pKd
+CDK2_neg_13,CHEMBL490251,O=C1NC(=O)c2ccc(I)cc2/C1=C/NCc1ccn(-c2ccccc2)c(=O)c1,negative,4.38,ChEMBL:CHEMBL490251; IC50 converted to pKd
+CDK2_neg_14,CHEMBL2163624,Cc1c(NC2CCCNC2)nc2ccnn2c1Nc1ccc(F)c(Cl)c1,negative,4.48,ChEMBL:CHEMBL2163624; IC50 converted to pKd
+CDK2_neg_15,CHEMBL474600,CC(=O)Nc1ccc(-c2ccc3c(-c4nc5c(N6CCN(C)CC6)cccc5[nH]4)n[nH]c3c2)cc1,negative,5.0,ChEMBL:CHEMBL474600; IC50 converted to pKd
+CDK2_neg_16,CHEMBL206109,NS(=O)(=O)c1ccc(Nc2cc(OCC3CCCCC3)nc3ncnn23)cc1,negative,4.96,ChEMBL:CHEMBL206109; IC50 converted to pKd
+CDK2_neg_17,CHEMBL2062563,CC(=O)Nc1ccc2ccn(-c3cc(NC4CC4)n4ncc(C#N)c4n3)c2c1,negative,4.58,ChEMBL:CHEMBL2062563; IC50 converted to pKd
+CDK2_neg_18,CHEMBL285527,O=S(=O)(O)c1cccc2cccc(Nc3ccccc3)c12,negative,4.43,ChEMBL:CHEMBL285527; Kd converted to pKd
+CDK2_neg_19,CHEMBL602679,COc1cccc2c1c(Cl)c1c3c(cc(O)c(O)c32)C(=O)N1,negative,5.0,ChEMBL:CHEMBL602679; IC50 converted to pKd
+CDK2_neg_20,CHEMBL1332616,O=C1OC2(c3ccccc31)c1cc(I)c(O)c(I)c1Oc1c2cc(I)c(O)c1I,negative,4.62,ChEMBL:CHEMBL1332616; IC50 converted to pKd
+CDK2_neg_21,CHEMBL2348172,Nc1nccc(-n2ccc3ccc(C(F)(F)F)cc32)n1,negative,4.77,ChEMBL:CHEMBL2348172; IC50 converted to pKd
+CDK2_neg_22,CHEMBL525921,Cc1ccc(-c2ccc(C(=O)N(C)CCc3c[nH]c4ccccc34)cc2)cc1,negative,4.16,ChEMBL:CHEMBL525921; IC50 converted to pKd
+CDK2_neg_23,CHEMBL484274,CCOc1ccc(CN/C=C2\C(=O)NC(=O)c3ccc(Br)cc32)cc1O,negative,4.34,ChEMBL:CHEMBL484274; IC50 converted to pKd
+CDK2_neg_24,CHEMBL3797559,Nc1ncccc1-c1nc2ccccc2[nH]1,negative,4.6,ChEMBL:CHEMBL3797559; IC50 converted to pKd
+CDK2_neg_25,CHEMBL516244,COc1ccccc1-c1ccc2c(-c3nc4c(N5CCN(C)CC5)cccc4[nH]3)n[nH]c2c1,negative,5.0,ChEMBL:CHEMBL516244; IC50 converted to pKd
+CDK2_neg_26,CHEMBL217092,CN1CCN(CCOc2cc(OC3CCOCC3)c3c(Nc4c(Cl)ccc5c4OCO5)ncnc3c2)CC1,negative,5.0,ChEMBL:CHEMBL217092; IC50 converted to pKd
+CDK2_neg_27,CHEMBL5174745,CCCC/C=C(\C#N)C(=O)Nc1cccc(-c2nn(C(C)(C)C)c3nc[nH]c(=O)c23)c1,negative,4.94,ChEMBL:CHEMBL5174745; Ki converted to pKd
+CDK2_neg_28,CHEMBL601026,O=C(O)c1cc2c(c3c1c([N+](=O)[O-])cc1c(O)cccc13)OCO2,negative,4.82,ChEMBL:CHEMBL601026; IC50 converted to pKd
+CDK2_neg_29,CHEMBL1809195,COc1cc(N2CCN(C(C)=O)CC2)ccc1Nc1ncc(C)c(-c2cnc3ccccn23)n1,negative,5.0,ChEMBL:CHEMBL1809195; IC50 converted to pKd
+CDK2_neg_30,CHEMBL99699,CC(C)c1ccccc1Nc1cc(Nc2ccc(OCC(O)CN(C)C)cc2)ncn1,negative,4.62,ChEMBL:CHEMBL99699; IC50 converted to pKd
+CDK2_neg_31,CHEMBL5401470,O=C(O)c1ccc([N+](=O)[O-])c2c1NC(c1ccc(Cl)cc1)C1CC=CC21,negative,4.9,ChEMBL:CHEMBL5401470; IC50 converted to pKd
+CDK2_neg_32,CHEMBL445162,CS(=O)(=O)c1cccc(Nc2nccc(Nc3c(Cl)ccc4c3OCO4)n2)c1,negative,4.75,ChEMBL:CHEMBL445162; IC50 converted to pKd
+CDK2_neg_33,CHEMBL99687,Cc1ccc(Nc2ccnc(Nc3ccc(OCC(O)CN(C)C)cc3)n2)cc1,negative,4.58,ChEMBL:CHEMBL99687; IC50 converted to pKd
+CDK2_neg_34,CHEMBL86795,c1ccc2[nH]ncc2c1,negative,3.73,ChEMBL:CHEMBL86795; IC50 converted to pKd
+CDK2_neg_35,CHEMBL5555502,CC(=O)Nc1cccc(CNc2nc(OC3CCN(C)CC3)nc3c(C(C)C)cnn23)c1N(C)C,negative,4.66,ChEMBL:CHEMBL5555502; IC50 converted to pKd

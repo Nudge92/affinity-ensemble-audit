@@ -1,0 +1,2 @@
+SMILES,PSICHIC_Score,ID,NMDN_Score,GIGN_Score,PIGNet2_Score,Weighted_Score,Weighted_Rank,Target,Family,Ensemble_Recipe
+Oc1ccccc1,3.0330546,P2M_0000,2.8553943634033203,3.783707618713379,1.677,2.896,1,cdk2,kinase,PSICHIC(0.7) + NMDN(0.05) + GIGN(0.1) + PIGNet2(0.15)

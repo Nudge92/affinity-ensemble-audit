@@ -1,0 +1,207 @@
+{
+  "version": "1.0",
+  "phase": "Phase 3 — Final Recipes",
+  "date": "2026-04-11",
+  "target_specific": {
+    "cdk2": {
+      "family": "kinase",
+      "pdb": "cdk2_clean.pdb",
+      "models": [
+        "PSICHIC",
+        "NMDN",
+        "GIGN",
+        "PIGNet2"
+      ],
+      "weights": [
+        0.7,
+        0.05,
+        0.1,
+        0.15
+      ],
+      "ensemble_rho": 0.663,
+      "excluded": [],
+      "notes": "8모델 전부 ρ>0, 동일가중(0.702)도 양호하나 PSICHIC 중심 4모델이 안정적"
+    },
+    "egfr": {
+      "family": "kinase",
+      "pdb": "4WKQ / egfr_clean.pdb",
+      "models": [
+        "GraphDTA",
+        "OnionNet2",
+        "PSICHIC",
+        "PIGNet2"
+      ],
+      "weights": [
+        0.4,
+        0.4,
+        0.1,
+        0.1
+      ],
+      "ensemble_rho": 0.861,
+      "excluded": [
+        "DeepDTA"
+      ],
+      "notes": "DeepDTA(ρ=-0.375) 제외. PSICHIC은 kinase domain(498aa)으로 실행 필수"
+    },
+    "hiv1pr": {
+      "family": "protease",
+      "pdb": "3NU3 / hiv1pr_clean.pdb",
+      "models": [
+        "OnionNet2",
+        "NMDN",
+        "GIGN",
+        "PSICHIC"
+      ],
+      "weights": [
+        0.45,
+        0.15,
+        0.15,
+        0.25
+      ],
+      "ensemble_rho": 0.825,
+      "excluded": [
+        "GraphDTA",
+        "PIGNet2"
+      ],
+      "notes": "PIGNet2는 dimer graph 생성 실패(N/A). GraphDTA(ρ=-0.005) 제외"
+    },
+    "ptp1b": {
+      "family": "phosphatase",
+      "pdb": "2QBP / ptp1b_clean.pdb",
+      "models": [
+        "MGraphDTA",
+        "DeepDTA",
+        "OnionNet2",
+        "GraphDTA"
+      ],
+      "weights": [
+        0.4,
+        0.35,
+        0.05,
+        0.2
+      ],
+      "ensemble_rho": 0.562,
+      "excluded": [
+        "PIGNet2"
+      ],
+      "notes": "PIGNet2(ρ=-0.369) 제외. Davis 학습 모델(MGraphDTA, DeepDTA)이 강세"
+    },
+    "era": {
+      "family": "nuclear_receptor",
+      "pdb": "3ERT / era_clean.pdb",
+      "models": [
+        "NMDN",
+        "GIGN",
+        "MGraphDTA",
+        "PIGNet2"
+      ],
+      "weights": [
+        0.05,
+        0.1,
+        0.8,
+        0.05
+      ],
+      "ensemble_rho": 0.664,
+      "excluded": [
+        "DeepDTA",
+        "GraphDTA"
+      ],
+      "notes": "MGraphDTA 지배적(0.80). DeepDTA/GraphDTA 음수 ρ 제외"
+    },
+    "caii": {
+      "family": "metalloenzyme",
+      "pdb": "3HS4 / caii_clean.pdb",
+      "models": [
+        "PSICHIC",
+        "GIGN",
+        "MGraphDTA",
+        "GraphDTA"
+      ],
+      "weights": [
+        0.3,
+        0.05,
+        0.3,
+        0.35
+      ],
+      "ensemble_rho": 0.83,
+      "excluded": [
+        "DeepDTA",
+        "PIGNet2"
+      ],
+      "notes": "DeepDTA/PIGNet2 음수 ρ 제외. GraphDTA가 단독 ρ=0.183이지만 조합에서 기여"
+    }
+  },
+  "universal": {
+    "fallback_3model": {
+      "models": [
+        "GIGN",
+        "MGraphDTA",
+        "NMDN"
+      ],
+      "weights": [
+        0.05,
+        0.8,
+        0.15
+      ],
+      "avg_rho": 0.613,
+      "min_rho": 0.44,
+      "notes": "6타겟 평균 ρ 최대화 grid search 결과. 최소 ρ=0.440(PTP1B)"
+    },
+    "fallback_2model": {
+      "models": [
+        "MGraphDTA",
+        "NMDN"
+      ],
+      "weights": [
+        0.85,
+        0.15
+      ],
+      "avg_rho": 0.589,
+      "min_rho": 0.423,
+      "notes": "최소 모델 수 universal. MGraphDTA 지배적"
+    },
+    "fallback_safe": {
+      "models": [
+        "NMDN",
+        "GIGN",
+        "MGraphDTA",
+        "PIGNet2"
+      ],
+      "weights": [
+        0.05,
+        0.1,
+        0.8,
+        0.05
+      ],
+      "avg_rho": 0.588,
+      "min_rho": 0.383,
+      "notes": "ERα 레시피 = 교차검증에서 가장 범용적 (평균 0.588, 최소 0.383)"
+    }
+  },
+  "model_info": {
+    "davis_trained": [
+      "DeepDTA",
+      "GraphDTA",
+      "MGraphDTA"
+    ],
+    "pdbbind_trained": [
+      "PIGNet2",
+      "OnionNet2",
+      "GIGN",
+      "PSICHIC",
+      "NMDN"
+    ],
+    "requires_docking": [
+      "PIGNet2",
+      "OnionNet2",
+      "GIGN",
+      "NMDN"
+    ],
+    "sequence_only": [
+      "DeepDTA",
+      "GraphDTA",
+      "MGraphDTA",
+      "PSICHIC"
+    ]
+  }
+}

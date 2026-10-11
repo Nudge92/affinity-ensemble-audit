@@ -1,0 +1,7 @@
+target,family,n_models,models,weights,ensemble_rho,ensemble_rmse,ensemble_gap,best_solo_model,best_solo_rho,improvement,w_PSICHIC,w_NMDN,w_GIGN,w_PIGNet2,w_GraphDTA,w_OnionNet2,w_MGraphDTA,w_DeepDTA
+cdk2,kinase,4,PSICHIC + NMDN + GIGN + PIGNet2,0.70 / 0.05 / 0.10 / 0.15,0.663,2.204,0.816,PSICHIC,0.546,0.117,0.7,0.05,0.1,0.15,,,,
+egfr,kinase,4,GraphDTA + OnionNet2 + PSICHIC + PIGNet2,0.40 / 0.40 / 0.10 / 0.10,0.861,2.342,1.281,MGraphDTA,0.684,0.177,0.1,,,0.1,0.4,0.4,,
+hiv1pr,protease,4,OnionNet2 + NMDN + GIGN + PSICHIC,0.45 / 0.15 / 0.15 / 0.25,0.825,2.95,1.054,OnionNet2,0.768,0.057,0.25,0.15,0.15,,,0.45,,
+ptp1b,phosphatase,4,MGraphDTA + DeepDTA + OnionNet2 + GraphDTA,0.40 / 0.35 / 0.05 / 0.20,0.562,2.349,0.33,MGraphDTA,0.432,0.13,,,,,0.2,0.05,0.4,0.35
+era,nuclear_receptor,4,NMDN + GIGN + MGraphDTA + PIGNet2,0.05 / 0.10 / 0.80 / 0.05,0.664,2.75,0.207,NMDN,0.524,0.14,,0.05,0.1,0.05,,,0.8,
+caii,metalloenzyme,4,PSICHIC + GIGN + MGraphDTA + GraphDTA,0.30 / 0.05 / 0.30 / 0.35,0.83,2.335,0.605,PSICHIC,0.688,0.141,0.3,,0.05,,0.35,,0.3,

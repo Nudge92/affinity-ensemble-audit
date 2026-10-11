@@ -1,0 +1,16 @@
+# envs/ADMETlab3.yaml
+# ADMETlab 3.0 웹 API 호출용 conda 환경
+#
+# 로컬 모델이 아니라 API 호출 방식이므로 의존성이 가벼움
+
+name: ADMETlab3
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pandas
+  - numpy
+  - pip:
+    - requests           # API 호출용

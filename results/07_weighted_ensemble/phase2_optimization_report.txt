@@ -1,0 +1,360 @@
+================================================================================
+  Phase 2: 타겟별 앙상블 가중치 최적화
+================================================================================
+
+================================================================================
+  CDK2 (kinase) — n=25
+================================================================================
+
+  개별 모델 Spearman ρ:
+    PSICHIC      ρ=+0.546  ✅ pass
+    NMDN         ρ=+0.517  ✅ pass
+    DeepDTA      ρ=+0.422  ✅ pass
+    OnionNet2    ρ=+0.410  ✅ pass
+    GIGN         ρ=+0.385  ✅ pass
+    PIGNet2      ρ=+0.365  ✅ pass
+    MGraphDTA    ρ=+0.331  ✅ pass
+    GraphDTA     ρ=+0.177  ⚠️ weak
+
+  Grid Search 진행 중...
+
+  ★ 최적 앙상블: PSICHIC + NMDN + GIGN + PIGNet2
+    모델 수: 4
+    PSICHIC     : 0.70
+    NMDN        : 0.05
+    GIGN        : 0.10
+    PIGNet2     : 0.15
+    Spearman:  0.663
+    Pearson:   0.505
+    RMSE:      2.204
+    Gap:       +0.816
+
+    vs 최고 단독 모델 (PSICHIC, ρ=0.546):
+    앙상블 향상: +0.117
+
+  Top-5 조합:
+      순위  조합                                         Spearman      Gap
+    ----  ---------------------------------------- ---------- --------
+       1  PSICHIC(0.70) + NMDN(0.05) + GIGN(0.10) + PIGNet2(0.15)      0.663   +0.816
+       2  PSICHIC(0.55) + NMDN(0.35) + GIGN(0.10)       0.659   +0.964
+       3  PSICHIC(0.50) + NMDN(0.30) + OnionNet2(0.05) + GIGN(0.15)      0.657   +0.966
+       4  PSICHIC(0.65) + OnionNet2(0.05) + GIGN(0.15) + PIGNet2(0.15)      0.654   +0.818
+       5  PSICHIC(0.20) + NMDN(0.40) + DeepDTA(0.10) + GIGN(0.30)      0.653   +0.933
+
+  전략 비교:
+    전략                                    Spearman     RMSE      Gap
+    ----------------------------------- ---------- -------- --------
+    PSICHIC 단독                               0.546    2.406   +0.871
+    NMDN 단독                                  0.517    2.180   +1.014
+    DeepDTA 단독                               0.422    2.362   +0.140
+    OnionNet2 단독                             0.410    2.598   +0.991
+    GIGN 단독                                  0.385    2.362   +1.204
+    PIGNet2 단독                               0.365    3.067   -0.030
+    MGraphDTA 단독                             0.331    2.317   +0.345
+    GraphDTA 단독                              0.177    2.400   +0.200
+    동일가중 8모델                                 0.702    2.173   +0.584
+    ★ 최적 PSICHIC + NMDN + GIGN + PIGNet2      0.663    2.204   +0.816
+
+================================================================================
+  EGFR (kinase) — n=25
+================================================================================
+
+  개별 모델 Spearman ρ:
+    MGraphDTA    ρ=+0.684  ✅ pass
+    GraphDTA     ρ=+0.659  ✅ pass
+    GIGN         ρ=+0.519  ✅ pass
+    OnionNet2    ρ=+0.417  ✅ pass
+    PSICHIC      ρ=+0.395  ✅ pass
+    PIGNet2      ρ=+0.268  ⚠️ weak
+    NMDN         ρ=+0.097  ⚠️ weak
+    DeepDTA      ρ=-0.375  ❌ exclude
+
+  제외 모델 (ρ<0): DeepDTA
+
+  Grid Search 진행 중...
+
+  ★ 최적 앙상블: GraphDTA + OnionNet2 + PSICHIC + PIGNet2
+    모델 수: 4
+    GraphDTA    : 0.40
+    OnionNet2   : 0.40
+    PSICHIC     : 0.10
+    PIGNet2     : 0.10
+    Spearman:  0.861
+    Pearson:   0.829
+    RMSE:      2.342
+    Gap:       +1.281
+
+    vs 최고 단독 모델 (MGraphDTA, ρ=0.684):
+    앙상블 향상: +0.177
+
+  Top-5 조합:
+      순위  조합                                         Spearman      Gap
+    ----  ---------------------------------------- ---------- --------
+       1  GraphDTA(0.40) + OnionNet2(0.40) + PSICHIC(0.10) + PIGNet2(0.10)      0.861   +1.281
+       2  GraphDTA(0.40) + GIGN(0.15) + OnionNet2(0.30) + PIGNet2(0.15)      0.854   +1.345
+       3  MGraphDTA(0.20) + GraphDTA(0.30) + OnionNet2(0.15) + PSICHIC(0.35)      0.833   +1.358
+       4  MGraphDTA(0.05) + GraphDTA(0.35) + OnionNet2(0.50) + PIGNet2(0.10)      0.832   +1.272
+       5  GraphDTA(0.60) + GIGN(0.05) + OnionNet2(0.15) + PSICHIC(0.20)      0.829   +1.391
+
+  전략 비교:
+    전략                                    Spearman     RMSE      Gap
+    ----------------------------------- ---------- -------- --------
+    MGraphDTA 단독                             0.684    2.192   +1.800
+    GraphDTA 단독                              0.659    2.350   +1.632
+    GIGN 단독                                  0.519    2.485   +1.249
+    OnionNet2 단독                             0.417    2.689   +0.905
+    PSICHIC 단독                               0.395    2.769   +1.065
+    PIGNet2 단독                               0.268    3.311   +0.140
+    NMDN 단독                                  0.097    2.832   +0.514
+    DeepDTA 단독                              -0.375    2.927   -0.097
+    동일가중 7모델                                 0.769    2.312   +1.242
+    ★ 최적 GraphDTA + OnionNet2 + PSICHIC + PIGNet2      0.861    2.342   +1.281
+
+================================================================================
+  HIV1PR (protease) — n=25
+================================================================================
+
+  개별 모델 Spearman ρ:
+    OnionNet2    ρ=+0.768  ✅ pass
+    NMDN         ρ=+0.679  ✅ pass
+    GIGN         ρ=+0.594  ✅ pass
+    PSICHIC      ρ=+0.406  ✅ pass
+    MGraphDTA    ρ=+0.299  ⚠️ weak
+    DeepDTA      ρ=+0.195  ⚠️ weak
+    GraphDTA     ρ=-0.005  ❌ exclude
+
+  제외 모델 (ρ<0): GraphDTA
+
+  Grid Search 진행 중...
+
+  ★ 최적 앙상블: OnionNet2 + NMDN + GIGN + PSICHIC
+    모델 수: 4
+    OnionNet2   : 0.45
+    NMDN        : 0.15
+    GIGN        : 0.15
+    PSICHIC     : 0.25
+    Spearman:  0.825
+    Pearson:   0.587
+    RMSE:      2.950
+    Gap:       +1.054
+
+    vs 최고 단독 모델 (OnionNet2, ρ=0.768):
+    앙상블 향상: +0.057
+
+  Top-5 조합:
+      순위  조합                                         Spearman      Gap
+    ----  ---------------------------------------- ---------- --------
+       1  OnionNet2(0.45) + NMDN(0.15) + GIGN(0.15) + PSICHIC(0.25)      0.825   +1.054
+       2  OnionNet2(0.75) + NMDN(0.15) + PSICHIC(0.05) + MGraphDTA(0.05)      0.820   +1.135
+       3  OnionNet2(0.75) + NMDN(0.15) + PSICHIC(0.10)      0.819   +1.166
+       4  OnionNet2(0.55) + GIGN(0.05) + PSICHIC(0.15) + MGraphDTA(0.25)      0.814   +0.824
+       5  OnionNet2(0.70) + GIGN(0.10) + PSICHIC(0.20)      0.813   +1.104
+
+  전략 비교:
+    전략                                    Spearman     RMSE      Gap
+    ----------------------------------- ---------- -------- --------
+    OnionNet2 단독                             0.768    2.771   +1.246
+    NMDN 단독                                  0.679    2.844   +1.156
+    GIGN 단독                                  0.594    2.905   +1.164
+    PSICHIC 단독                               0.406    3.803   +0.581
+    MGraphDTA 단독                             0.299    3.701   -0.025
+    DeepDTA 단독                               0.195    3.312   +0.078
+    GraphDTA 단독                             -0.005    3.890   -0.001
+    동일가중 6모델                                 0.682    2.976   +0.615
+    ★ 최적 OnionNet2 + NMDN + GIGN + PSICHIC      0.825    2.950   +1.054
+
+================================================================================
+  PTP1B (phosphatase) — n=25
+================================================================================
+
+  개별 모델 Spearman ρ:
+    MGraphDTA    ρ=+0.432  ✅ pass
+    DeepDTA      ρ=+0.329  ✅ pass
+    GIGN         ρ=+0.273  ⚠️ weak
+    PSICHIC      ρ=+0.188  ⚠️ weak
+    OnionNet2    ρ=+0.089  ⚠️ weak
+    GraphDTA     ρ=+0.077  ⚠️ weak
+    NMDN         ρ=+0.072  ⚠️ weak
+    PIGNet2      ρ=-0.369  ❌ exclude
+
+  제외 모델 (ρ<0): PIGNet2
+
+  Grid Search 진행 중...
+
+  ★ 최적 앙상블: MGraphDTA + DeepDTA + OnionNet2 + GraphDTA
+    모델 수: 4
+    MGraphDTA   : 0.40
+    DeepDTA     : 0.35
+    OnionNet2   : 0.05
+    GraphDTA    : 0.20
+    Spearman:  0.562
+    Pearson:   0.466
+    RMSE:      2.349
+    Gap:       +0.330
+
+    vs 최고 단독 모델 (MGraphDTA, ρ=0.432):
+    앙상블 향상: +0.130
+
+  Top-5 조합:
+      순위  조합                                         Spearman      Gap
+    ----  ---------------------------------------- ---------- --------
+       1  MGraphDTA(0.40) + DeepDTA(0.35) + OnionNet2(0.05) + GraphDTA(0.20)      0.562   +0.330
+       2  MGraphDTA(0.50) + DeepDTA(0.45) + OnionNet2(0.05)      0.558   +0.371
+       3  MGraphDTA(0.55) + DeepDTA(0.35) + PSICHIC(0.05) + GraphDTA(0.05)      0.553   +0.424
+       4  MGraphDTA(0.65) + DeepDTA(0.25) + GIGN(0.05) + OnionNet2(0.05)      0.551   +0.441
+       5  MGraphDTA(0.35) + DeepDTA(0.50) + GIGN(0.05) + GraphDTA(0.10)      0.551   +0.341
+
+  전략 비교:
+    전략                                    Spearman     RMSE      Gap
+    ----------------------------------- ---------- -------- --------
+    MGraphDTA 단독                             0.432    2.238   +0.543
+    DeepDTA 단독                               0.329    2.452   +0.207
+    GIGN 단독                                  0.273    2.445   +0.613
+    PSICHIC 단독                               0.188    2.493   +0.882
+    OnionNet2 단독                             0.089    2.679   +0.123
+    GraphDTA 단독                              0.077    2.435   +0.174
+    NMDN 단독                                  0.072    2.590   -0.027
+    PIGNet2 단독                              -0.369    3.262   -1.025
+    동일가중 7모델                                 0.258    2.345   +0.359
+    ★ 최적 MGraphDTA + DeepDTA + OnionNet2 + GraphDTA      0.562    2.349   +0.330
+
+================================================================================
+  ERA (nuclear_receptor) — n=25
+================================================================================
+
+  개별 모델 Spearman ρ:
+    NMDN         ρ=+0.524  ✅ pass
+    GIGN         ρ=+0.508  ✅ pass
+    MGraphDTA    ρ=+0.301  ✅ pass
+    OnionNet2    ρ=+0.247  ⚠️ weak
+    PSICHIC      ρ=+0.240  ⚠️ weak
+    PIGNet2      ρ=+0.058  ⚠️ weak
+    DeepDTA      ρ=-0.087  ❌ exclude
+    GraphDTA     ρ=-0.173  ❌ exclude
+
+  제외 모델 (ρ<0): DeepDTA, GraphDTA
+
+  Grid Search 진행 중...
+
+  ★ 최적 앙상블: NMDN + GIGN + MGraphDTA + PIGNet2
+    모델 수: 4
+    NMDN        : 0.05
+    GIGN        : 0.10
+    MGraphDTA   : 0.80
+    PIGNet2     : 0.05
+    Spearman:  0.664
+    Pearson:   0.607
+    RMSE:      2.750
+    Gap:       +0.207
+
+    vs 최고 단독 모델 (NMDN, ρ=0.524):
+    앙상블 향상: +0.140
+
+  Top-5 조합:
+      순위  조합                                         Spearman      Gap
+    ----  ---------------------------------------- ---------- --------
+       1  NMDN(0.05) + GIGN(0.10) + MGraphDTA(0.80) + PIGNet2(0.05)      0.664   +0.207
+       2  NMDN(0.10) + GIGN(0.10) + MGraphDTA(0.80)      0.658   +0.242
+       3  NMDN(0.10) + GIGN(0.10) + MGraphDTA(0.75) + PSICHIC(0.05)      0.651   +0.256
+       4  NMDN(0.10) + GIGN(0.05) + MGraphDTA(0.80) + OnionNet2(0.05)      0.649   +0.213
+       5  GIGN(0.15) + MGraphDTA(0.75) + PSICHIC(0.05) + PIGNet2(0.05)      0.642   +0.229
+
+  전략 비교:
+    전략                                    Spearman     RMSE      Gap
+    ----------------------------------- ---------- -------- --------
+    NMDN 단독                                  0.524    2.466   +0.932
+    GIGN 단독                                  0.508    2.569   +1.036
+    MGraphDTA 단독                             0.301    2.879   +0.057
+    OnionNet2 단독                             0.247    2.806   +0.447
+    PSICHIC 단독                               0.240    2.701   +0.327
+    PIGNet2 단독                               0.058    4.207   -0.970
+    DeepDTA 단독                              -0.087    2.834   -0.080
+    GraphDTA 단독                             -0.173    2.938   -0.016
+    동일가중 6모델                                 0.401    2.568   +0.611
+    ★ 최적 NMDN + GIGN + MGraphDTA + PIGNet2      0.664    2.750   +0.207
+
+================================================================================
+  CAII (metalloenzyme) — n=25
+================================================================================
+
+  개별 모델 Spearman ρ:
+    PSICHIC      ρ=+0.688  ✅ pass
+    GIGN         ρ=+0.635  ✅ pass
+    MGraphDTA    ρ=+0.570  ✅ pass
+    NMDN         ρ=+0.429  ✅ pass
+    GraphDTA     ρ=+0.183  ⚠️ weak
+    OnionNet2    ρ=+0.048  ⚠️ weak
+    DeepDTA      ρ=-0.113  ❌ exclude
+    PIGNet2      ρ=-0.133  ❌ exclude
+
+  제외 모델 (ρ<0): PIGNet2, DeepDTA
+
+  Grid Search 진행 중...
+
+  ★ 최적 앙상블: PSICHIC + GIGN + MGraphDTA + GraphDTA
+    모델 수: 4
+    PSICHIC     : 0.30
+    GIGN        : 0.05
+    MGraphDTA   : 0.30
+    GraphDTA    : 0.35
+    Spearman:  0.830
+    Pearson:   0.690
+    RMSE:      2.335
+    Gap:       +0.605
+
+    vs 최고 단독 모델 (PSICHIC, ρ=0.688):
+    앙상블 향상: +0.141
+
+  Top-5 조합:
+      순위  조합                                         Spearman      Gap
+    ----  ---------------------------------------- ---------- --------
+       1  PSICHIC(0.30) + GIGN(0.05) + MGraphDTA(0.30) + GraphDTA(0.35)      0.830   +0.605
+       2  PSICHIC(0.25) + MGraphDTA(0.30) + GraphDTA(0.45)      0.808   +0.466
+       3  PSICHIC(0.25) + GIGN(0.15) + MGraphDTA(0.60)      0.797   +0.790
+       4  PSICHIC(0.20) + GIGN(0.15) + MGraphDTA(0.60) + NMDN(0.05)      0.796   +0.768
+       5  PSICHIC(0.30) + GIGN(0.15) + GraphDTA(0.55)      0.786   +0.640
+
+  전략 비교:
+    전략                                    Spearman     RMSE      Gap
+    ----------------------------------- ---------- -------- --------
+    PSICHIC 단독                               0.688    3.120   +1.363
+    GIGN 단독                                  0.635    2.267   +1.461
+    MGraphDTA 단독                             0.570    2.342   +0.384
+    NMDN 단독                                  0.429    2.242   +0.904
+    GraphDTA 단독                              0.183    2.536   +0.021
+    OnionNet2 단독                             0.048    2.933   +0.327
+    DeepDTA 단독                              -0.113    2.544   +0.009
+    PIGNet2 단독                              -0.133    5.562   -1.592
+    동일가중 6모델                                 0.548    2.345   +0.743
+    ★ 최적 PSICHIC + GIGN + MGraphDTA + GraphDTA      0.830    2.335   +0.605
+
+
+################################################################################
+  Phase 2 종합 요약
+################################################################################
+
+  타겟       패밀리                최적 조합                                  ρ_ens   ρ_solo       향상
+  -------- ------------------ ----------------------------------- -------- -------- --------
+  cdk2     kinase             PSICHIC + NMDN + GIGN + PIGNet2        0.663    0.546   +0.117
+  egfr     kinase             GraphDTA + OnionNet2 + PSICHIC + PIGNet2    0.861    0.684   +0.177
+  hiv1pr   protease           OnionNet2 + NMDN + GIGN + PSICHIC      0.825    0.768   +0.057
+  ptp1b    phosphatase        MGraphDTA + DeepDTA + OnionNet2 + GraphDTA    0.562    0.432   +0.130
+  era      nuclear_receptor   NMDN + GIGN + MGraphDTA + PIGNet2      0.664    0.524   +0.140
+  caii     metalloenzyme      PSICHIC + GIGN + MGraphDTA + GraphDTA    0.830    0.688   +0.141
+
+  패밀리별 모델 출현 빈도:
+    kinase            : PSICHIC(2), PIGNet2(2), NMDN(1), GIGN(1), GraphDTA(1), OnionNet2(1)
+    metalloenzyme     : PSICHIC(1), GIGN(1), MGraphDTA(1), GraphDTA(1)
+    nuclear_receptor  : NMDN(1), GIGN(1), MGraphDTA(1), PIGNet2(1)
+    phosphatase       : MGraphDTA(1), DeepDTA(1), OnionNet2(1), GraphDTA(1)
+    protease          : OnionNet2(1), NMDN(1), GIGN(1), PSICHIC(1)
+    전체                : PSICHIC(4), GIGN(4), NMDN(3), PIGNet2(3), GraphDTA(3), OnionNet2(3), MGraphDTA(3), DeepDTA(1)
+
+  추천 앙상블 레시피 (Phase 3 입력):
+    kinase            : GraphDTA=0.40, OnionNet2=0.40, PSICHIC=0.10, PIGNet2=0.10  (ρ=0.861, from egfr)
+    metalloenzyme     : PSICHIC=0.30, GIGN=0.05, MGraphDTA=0.30, GraphDTA=0.35  (ρ=0.830, from caii)
+    nuclear_receptor  : NMDN=0.05, GIGN=0.10, MGraphDTA=0.80, PIGNet2=0.05  (ρ=0.664, from era)
+    phosphatase       : MGraphDTA=0.40, DeepDTA=0.35, OnionNet2=0.05, GraphDTA=0.20  (ρ=0.562, from ptp1b)
+    protease          : OnionNet2=0.45, NMDN=0.15, GIGN=0.15, PSICHIC=0.25  (ρ=0.825, from hiv1pr)
+
+    Universal fallback 후보: PSICHIC(4/6), GIGN(4/6), NMDN(3/6)

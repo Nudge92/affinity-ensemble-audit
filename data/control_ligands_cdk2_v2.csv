@@ -1,0 +1,26 @@
+ID,Drug_Name,SMILES,Type,pKd,Notes
+CDK2_pos_01,Staurosporine,C[C@@]12[C@@H]([C@@H](C[C@@H](O1)N3C4=CC=CC=C4C5=C6C(=C7C8=CC=CC=C8N2C7=C53)CNC6=O)NC)OC,positive,8.15,Pan-kinase inhibitor; CDK2 Ki~7nM; 1AQ1 co-crystal
+CDK2_pos_02,AT7519,CC[C@H](CO)N1C2=NC(=NC=C2C(=O)N1C3=CC(=CC=C3)NCC4=CC=C([N+](=O)[O-])C=C4)NCC5=CC=CC(=C5)Cl,positive,7.33,CDK1/2/4/5/9; CDK2 IC50=47nM
+CDK2_pos_03,Roscovitine,CC(C1=NC(=NC=N1)N(C)C2CCCCC2)NCC3=CC=CC=C3,positive,6.15,CDK1/2/5/7; CDK2 IC50~0.7uM
+CDK2_pos_04,Alvocidib,O=C1C=C(OC2=CC(=CC(=C21)O)O)[C@@H]1CC[C@@H](O)CC1,positive,7.00,Flavopiridol; CDK1/2/4; CDK2 IC50~0.1uM
+CDK2_pos_05,Dinaciclib,CC[C@@H](CO)N1C2=CC=C(C=C2C(=O)N1C3=NC(=NC=C3NCC4=CC([O-])=CC=C4)N)F,positive,9.00,CDK1/2/5/9; CDK2 IC50~1nM
+CDK2_pos_06,AZD5438,CC(=O)C1=C(C=C(C=C1)F)NC2=NC=C(C(=N2)NC3=CC(=CC=C3)S(=O)(=O)NC(C)C)Br,positive,7.40,CDK1/2/9; CDK2 IC50~16nM
+CDK2_pos_07,SNS-032,CC(C1=NN(C(=S)N1)CC2=CC=CC=C2)NC(=O)C3=CC4=CC=CC=C4S3,positive,7.42,BMS-387032; CDK2 IC50=38nM; CDK9 IC50=4nM
+CDK2_pos_08,Kenpaullone,O=C1NC2=CC=CC=C2/C1=C\1C2=C(Br)C=CC=C2NC1=O,positive,6.15,CDK1/2/5; CDK2 IC50=0.7uM
+CDK2_pos_09,Olomoucine,C1=CC=C(C=C1)NCC(C)NC2=NC=NC3=C2N=CN3,positive,5.15,CDK1/2/5; CDK2 IC50=7uM
+CDK2_pos_10,NU6102,NS(=O)(=O)C1=CC=C(NC2=NC3=C(N=CN3)C(=N2)OCC3CCCCC3)C=C1,positive,8.30,CDK2 selective; IC50=5nM
+CDK2_pos_11,Purvalanol_A,CC(C)C(NC1=NC(=C2N=CN(C2=N1)C(C)C)NCC3=CC(=CC=C3)Cl)CO,positive,7.30,CDK2 IC50=50nM; selective
+CDK2_pos_12,SU9516,O=C1NC(/C=C\2C3=CC=CC=C3NC2=O)=C(O)C1=O,positive,5.60,CDK2 IC50=2.5uM; ATP-competitive
+CDK2_pos_13,Milciclib,CC1=C(C(=O)N(N1)C2=NC3=C(C=C2)N=CC=C3)NCC4=CC=C(C=C4)N5CCOCC5,positive,7.35,CDK2 IC50=45nM; phase II
+CDK2_pos_14,Riviciclib,COC1=CC2=C(C=C1OC)C(=CC(=O)N2)C1=CC(=CC=C1)OC,positive,6.30,P276-00; CDK2; IC50~0.5uM
+CDK2_pos_15,BS-194,C1=CC2=C(C=C1F)N=C(N=C2NC3=CC(=CC=C3)S(=O)(=O)NC)NCC4=CC=CC=C4,positive,8.52,CDK2 IC50=3nM; pyrazolopyrimidine
+CDK2_neg_01,Aspirin,CC(=O)OC1=CC=CC=C1C(=O)O,negative,3.00,COX inhibitor; no kinase activity
+CDK2_neg_02,Ibuprofen,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,negative,3.00,COX inhibitor; no kinase activity
+CDK2_neg_03,Metformin,CN(C)C(=N)NC(=N)N,negative,3.00,AMPK activator; no kinase binding
+CDK2_neg_04,Celecoxib,CC1=CC=C(C=C1)C2=CC(=NN2C3=CC=C(C=C3)S(=O)(=O)N)C(F)(F)F,negative,3.00,COX-2 inhibitor; no CDK activity
+CDK2_neg_05,Salicylic_acid,OC(=O)C1=CC=CC=C1O,negative,3.00,Anti-inflammatory; no kinase activity
+CDK2_neg_06,Methotrexate,CN(CC1=CN=C2N=C(N)N=C(N)C2=N1)C1=CC=C(C(=O)N[C@@H](CCC(=O)O)C(=O)O)C=C1,negative,2.00,DHFR inhibitor; no CDK2 activity
+CDK2_neg_07,Omeprazole,COC1=CC2=C(C=C1OC)N=C(S(=O)CC1=NC=C(C)C(=C1)OC)N2,negative,2.00,Proton pump inhibitor
+CDK2_neg_08,Amlodipine,CCOC(=O)C1=C(COCCN)NC(C)=C(C(=O)OC)C1C1=CC=CC=C1Cl,negative,2.00,Ca channel blocker
+CDK2_neg_09,Tamoxifen,CCC(=C(C1=CC=CC=C1)C1=CC=CC=C1)C1=CC=C(OCCN(C)C)C=C1,negative,2.00,ER antagonist; no kinase activity
+CDK2_neg_10,Loratadine,CCOC(=O)N1CCC(=C2C3=CC=C(Cl)C=C3CCC3=CC=CN=C32)CC1,negative,2.00,H1 antihistamine

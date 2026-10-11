@@ -1,0 +1,2 @@
+Ensemble_Rank,ID,SMILES,Mean_Percentile,Mean_Score,Min_Score,Max_Score,Std_Score,Num_Models,Models
+1.0,P2M_0000,Oc1ccccc1,1.0,3.487683029174805,1.699,5.053049087524414,1.6881392633532175,3,DeepDTA|OnionNet2|PIGNet2

@@ -1,0 +1,1 @@
+Namespace(batch_size=16, device='cuda:0', result_path='../../results/06_validation/psichic_screen', save_cluster=False, save_interpret=True, screenfile='../../data/psichic_screen_cdk2.csv', trained_model_path='trained_weights/PDBv2020_PSICHIC')
