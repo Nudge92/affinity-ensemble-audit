@@ -1,0 +1,26 @@
+# 외부 모델 저장소 클론 — 각 저장소에서 직접 받는다 (8.7 GB)
+external_models/
+
+# 중간 캐시 (2.5 GB)
+cache/
+
+# 실행 로그 — 절대경로가 많아 제외했다
+logs/
+log.txt
+
+# 학습된 모델 가중치
+*.pt
+*.pth
+*.pkl
+*.joblib
+*.h5
+*.ckpt
+
+# 파이썬
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 환경
+.env
+.venv/
